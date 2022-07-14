@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Styles
 import "./navbar.scss";
@@ -9,9 +9,17 @@ import { Link } from "react-router-dom";
 
 // Icons
 import { RiArrowDownSFill } from "react-icons/ri";
+
+// COMPONENTS
 import MobileNavbar from "./MobileNavbar/MobileNavbar";
+import Signin from "../Auth/Signin";
 
 const Navbar = () => {
+  const [signInPopUpClass, setSignInPopUpClass] = useState("");
+
+  const handleSignIn = () => {
+    setSignInPopUpClass("active")
+  }
   return (
     <>
       <nav className="nav">
@@ -72,12 +80,13 @@ const Navbar = () => {
         </div>
         <div className="nav__right">
           <div className="nav__right-wrapper">
-            <Link to="#modal-login">Kirish | </Link>
+            <Link to="#modal-login" onClick={handleSignIn}>Kirish | </Link>
             <Link to="#modal-register">Ro'yxatdan o'tish</Link>
           </div>
         </div>
       </nav>
       <MobileNavbar />
+      <Signin signInPopUpClass={signInPopUpClass} setSignInPopUpClass={setSignInPopUpClass}  />
     </>
   );
 };

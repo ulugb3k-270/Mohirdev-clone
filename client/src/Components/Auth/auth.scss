@@ -1,0 +1,111 @@
+@import "../../root.scss";
+
+.auth {
+  &__form {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: white;
+    padding: 20px;
+    border-radius: 3px;
+    width: 380px;
+    padding: 80px 50px;
+    transform: translateX(380px);
+    transition: all 0.3s;
+    z-index: -99;
+    box-shadow: 6px 0px 20px 0px;
+
+    &.active {
+      transform: translateX(0);
+      z-index: unset;
+      transition: all 0.3s;
+    }
+
+    svg {
+      fill: $secondary-paragraph-color;
+      font-size: 30px;
+      position: absolute;
+      right: 10%;
+      top: 4%;
+      cursor: pointer;
+    }
+
+    &-paragraph {
+      font-size: $font-size--large;
+      font-weight: 600;
+      color: $primary-paragraph-color;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-size: $font-size--small;
+      color: $primary-paragraph-color;
+      margin-bottom: 30px;
+    }
+
+    input {
+      padding: 10px 15px;
+      background: $primary-white-color;
+      border: 1px solid rgb(199, 199, 199);
+      width: 100%;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      font-size: $font-size--x-small;
+      height: 50px;
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 30px;
+
+      div {
+        display: flex;
+        align-items: center;
+
+        input {
+          height: 14px;
+          margin: 0;
+        }
+
+        p {
+          font-size: $font-size--2x-small;
+          color: $primary-paragraph-color;
+        }
+      }
+
+      a {
+        font-size: $font-size--2x-small;
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      background: #0665d8;
+      color: $primary-white-color;
+      padding: 10px 15px;
+      margin-bottom: 30px;
+      font-size: $font-size--small;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      border-radius: 3px;
+      border: none;
+
+      &:hover {
+        background: #03499e;
+      }
+    }
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: translateX(380px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -4,7 +4,7 @@ import "./auth.scss"
 
 const Signup = () => {
   return (
-    <div>Signup</div>
+    <div></div>
   )
 }
 

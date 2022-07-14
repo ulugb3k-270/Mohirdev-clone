@@ -5,7 +5,7 @@ import "./header.scss"
 import "./media.header.scss"
 
 // Components
-import { Navbar } from '../../Components'
+import { Navbar, Signin } from '../../Components'
 
 // Icons
 import { IoIosSearch } from "react-icons/io"
@@ -29,6 +29,7 @@ const Header = () => {
             <div className='heade__main-right'></div>
           </div>
       </div>
+      
     </header>
   )
 }
