@@ -1,0 +1,51 @@
+@import "../../root.scss";
+
+@media (max-width: 1200px) {
+    .header{
+        height: 62vh;
+        &__main{
+            padding: 0;
+            padding: 90px 80px;
+            width: 100%;
+            &-left{
+                width: 100%;
+                h1{
+                    font-size: $font-size--x-large;
+                    line-height: 50px;
+                }
+
+                &-input{
+                    width: 100%;
+                }
+            }
+
+            &-right{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+
+    .header{
+        height: 50vh;
+
+        &__main{
+            padding: 4rem 2rem;
+
+            &-left{
+                h1{
+                    font-size: $font-size--large;
+                }
+
+                &-input{
+                    input,
+                    input::placeholder{
+                        font-size: $font-size--small;
+                    }
+                }
+            }
+        }
+    }
+}

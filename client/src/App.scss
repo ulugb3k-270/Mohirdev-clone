@@ -1,0 +1,22 @@
+@import "./root.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: $container;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}

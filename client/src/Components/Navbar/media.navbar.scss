@@ -1,0 +1,18 @@
+@media (max-width: 1200px){
+    .nav{
+        &__right{
+            &-wrapper{
+                padding: 6px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .nav__list{
+        display: none;
+    }
+    .mobile__nav{
+        display: inline;
+    }
+}

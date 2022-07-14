@@ -1,0 +1,70 @@
+@import "../../../root.scss";
+
+.mobile__nav {
+  padding: 12px 30px;
+  font-family: $open-sans;
+  background: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0px 12px 20px 0px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-item {
+    position: relative;
+    z-index: 9;
+  }
+
+  &-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+      p {
+        color: $primary-hover-color;
+      }
+
+      svg {
+        path {
+          fill: $primary-hover-color !important ;
+        }
+      }
+    }
+
+    &.active &-modal {
+      transform: translateY(12px);
+    }
+
+    &-modal {
+      position: absolute;
+      width: 200vw;
+      height: calc(100vh - 56px - 63px);
+      bottom: 63px;
+      background: $primary-white-color;
+
+      border-radius: 3px;
+      transform: translateX(-30px);
+      transform: translateY(calc(100% + 63px));
+      transition: all 0.3s;
+    }
+
+    p {
+      color: $muted-color;
+      font-size: 12px;
+    }
+
+    svg {
+      font-size: 22px;
+      path {
+        fill: $muted-color !important;
+      }
+    }
+  }
+}

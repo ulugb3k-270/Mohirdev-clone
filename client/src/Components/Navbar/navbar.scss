@@ -1,0 +1,115 @@
+@import "../../root.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  font-family: $open-sans;
+  
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 50px;
+    img {
+      max-width: 100px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 20px 5px;
+    display: flex;
+    align-items: center;
+    a {
+      color: $primary-white-color;
+      text-transform: uppercase;
+      font-size: $font-size--x-small;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        height: 2px;
+        border-radius: 10px;
+        width: 0%;
+        background: $primary-white-color;
+        transition: all 0.4s;
+      }
+    }
+
+    svg{
+        fill: white;
+    }
+
+    &:hover > a {
+      -webkit-text-stroke: 0.5px;
+    }
+
+    &:hover > a::after {
+      width: 30%;
+    }
+
+    &-dropdown {
+      position: absolute;
+      top: 57px;
+      left: -20px;
+      width: 200%;
+      background: white;
+      padding: 0;
+      border-radius: 10px;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+      &-item {
+        padding: 10px 0;
+        a {
+          color: $secondary-paragraph-color;
+          transition: 0.3s ease-in-out;
+          font-size: $font-size--x-small;
+          &:hover {
+            color: #8c94a8;
+          }
+        }
+      }
+    }
+
+    &:hover > &-dropdown {
+      height: auto;
+      overflow: visible;
+      padding: 18px 30px;
+      opacity: 1;
+    }
+  }
+
+  &__right{
+    &-wrapper{
+      border: 1px solid $primary-white-color;
+      padding: 10px 23px;
+      border-radius: 3px;
+
+      a{
+        color: $primary-white-color;
+        font-weight: 600;
+        font-size: $font-size--x-small;
+      }
+    }
+  }
+}
+
+.mobile__nav{
+  display: none;
+}
