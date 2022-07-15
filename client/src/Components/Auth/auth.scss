@@ -13,8 +13,12 @@
     padding: 80px 50px;
     transform: translateX(380px);
     transition: all 0.3s;
-    z-index: -99;
+    z-index: 3;
     box-shadow: 6px 0px 20px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &.active {
       transform: translateX(0);
@@ -101,11 +105,17 @@
   }
 }
 
-@keyframes popUp {
-  0% {
-    transform: translateX(380px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.signup__form-btn{
+  font-size: $font-size--medium;
+  font-weight: 500;
+
 }
+
+// @keyframes popUp {
+//   0% {
+//     transform: translateX(380px);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }

@@ -13,13 +13,22 @@ import { RiArrowDownSFill } from "react-icons/ri";
 // COMPONENTS
 import MobileNavbar from "./MobileNavbar/MobileNavbar";
 import Signin from "../Auth/Signin";
+import Signup from "../Auth/Signup";
 
 const Navbar = () => {
   const [signInPopUpClass, setSignInPopUpClass] = useState("");
+  const [signUpPopUpClass, setSignUpPopUpClass] = useState("");
 
   const handleSignIn = () => {
+    setSignUpPopUpClass("")
     setSignInPopUpClass("active")
   }
+
+  const handleSignUp = () => {
+    setSignInPopUpClass("")
+    setSignUpPopUpClass("active")
+  }
+  
   return (
     <>
       <nav className="nav">
@@ -81,12 +90,13 @@ const Navbar = () => {
         <div className="nav__right">
           <div className="nav__right-wrapper">
             <Link to="#modal-login" onClick={handleSignIn}>Kirish | </Link>
-            <Link to="#modal-register">Ro'yxatdan o'tish</Link>
+            <Link to="#modal-register" onClick={handleSignUp}>Ro'yxatdan o'tish</Link>
           </div>
         </div>
       </nav>
       <MobileNavbar />
-      <Signin signInPopUpClass={signInPopUpClass} setSignInPopUpClass={setSignInPopUpClass}  />
+      <Signin signInPopUpClass={signInPopUpClass} setSignInPopUpClass={setSignInPopUpClass} />
+      <Signup signUpPopUpClass={signUpPopUpClass} setSignUpPopUpClass={setSignUpPopUpClass} />
     </>
   );
 };
