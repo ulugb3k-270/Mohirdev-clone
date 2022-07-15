@@ -4,7 +4,7 @@ import React from "react";
 import "./App.scss";
 
 // Layouts
-import { Header } from "./Layouts";
+import { Header, Main } from "./Layouts";
 
 // React-Router-Dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,11 +12,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={
-          <Header />
-        }/>
-      </Routes>
+      <Header />
+      <Main />
     </Router>
   );
 }

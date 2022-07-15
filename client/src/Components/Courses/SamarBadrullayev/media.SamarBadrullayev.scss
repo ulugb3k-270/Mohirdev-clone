@@ -1,0 +1,7 @@
+@media (max-width: 720px){
+    .sam{
+        &__grid{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

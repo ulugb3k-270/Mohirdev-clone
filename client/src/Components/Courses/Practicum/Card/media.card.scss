@@ -1,0 +1,16 @@
+@media (max-width: 720px) {
+  .practicum__card {
+    max-width: 360px;
+    width: 100%;
+    max-height: 212px;
+    height: 100%;
+
+   a{
+    img {
+      max-width: 360px;
+      width: 100%;
+      height: calc(100% + 2px);
+    }
+   }
+  }
+}

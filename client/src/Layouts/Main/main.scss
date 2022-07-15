@@ -1,0 +1,17 @@
+@import "../../root.scss";
+
+.main {
+  font-family: $open-sans;
+
+  &__animatedText {
+    color: $primary-black-color;
+    font-size: 2.87rem;
+    text-align: center;
+    margin: 70px 0;
+    span {
+      background: -webkit-linear-gradient(140deg, #1066cc 0%, #55cd37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

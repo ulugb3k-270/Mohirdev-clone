@@ -1,0 +1,6 @@
+.practicum{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    row-gap: 20px;
+}

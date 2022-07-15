@@ -1,0 +1,22 @@
+.practicum__card {
+  width: 328px;
+  height: 191px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px 2px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-bottom: 28px;
+
+  &:hover {
+    box-shadow: unset;
+  }
+
+  a {
+    img {
+      width: 329px;
+      height: 191px;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.paid__courses{
+    &-paragraph{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+        place-items: center;
+    }
+}

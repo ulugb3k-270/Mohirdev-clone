@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+  .card {
+    max-width: 500px;
+    width: 100%;
+    min-height: 500px;
+
+    &__header {
+      img {
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    min-height: 450px;
+  }
+
+  .card.big{
+    min-height: 500px;
+  }
+}

@@ -1,0 +1,153 @@
+@import "../../../root.scss";
+
+.card {
+  max-width: 285px;
+  width: 100%;
+  border-radius: 4px;
+  border: $muted-border-solid;
+  position: relative;
+  min-height: 420px;
+  height: 100%;
+  
+  &:hover {
+    .card__header-frame {
+      opacity: 1;
+
+      button {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__header {
+    position: relative;
+    img {
+      max-width: 285px;
+      width: 100%;
+    }
+
+    &-frame {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 5px);
+      background: $secondary-hover-color;
+      display: grid;
+      place-items: center;
+      transition: 0.3s ease-in-out;
+
+      button {
+        transform: translateY(20px);
+        background: unset;
+        border: 1px solid $primary-white-color;
+        padding: 12px 22px;
+        color: $primary-white-color;
+        border-radius: 6px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background: $primary-white-color;
+          color: $primary-hover-color;
+        }
+      }
+    }
+  }
+
+  &__main {
+    padding: 22px;
+
+    &-rating{
+      svg{
+        fill: #f4c150;
+        margin-bottom: 8px;
+        cursor: pointer;
+      }
+    }
+    h2 {
+      color: $primary-paragraph-color;
+      font-size: $font-size--medium;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: $muted-color;
+      font-size: $font-size--x-small;
+      margin-bottom: 8px;
+      span {
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: $muted-border-solid;
+    border-bottom: $muted-border-solid;
+    display: flex;
+
+    h3 {
+      flex: 1;
+      border-right: $muted-border-solid;
+      padding: 13px;
+      font-weight: 700;
+      font-size: 22px;
+    }
+    a {
+      padding: 16px;
+      background: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background: $primary-hover-color;
+        svg {
+          fill: $primary-white-color;
+        }
+      }
+
+      svg {
+        font-size: 20px;
+        fill: $primary-hover-color;
+      }
+    }
+  }
+
+  &.big{
+    max-width: 500px;
+    min-height: 500px;
+
+    .card__header{
+      img{
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+  &.medium{
+    max-width: 400px;
+    min-height: 500px;
+
+    .card__header{
+      img{
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
