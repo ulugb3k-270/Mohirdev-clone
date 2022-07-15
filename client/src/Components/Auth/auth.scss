@@ -11,7 +11,7 @@
     border-radius: 3px;
     width: 380px;
     padding: 80px 50px;
-    transform: translateX(380px);
+    transform: translateX(390px);
     transition: all 0.3s;
     z-index: 3;
     box-shadow: 6px 0px 20px 0px;
@@ -111,11 +111,3 @@
 
 }
 
-// @keyframes popUp {
-//   0% {
-//     transform: translateX(380px);
-//   }
-//   100% {
-//     transform: translateX(0);
-//   }
-// }
