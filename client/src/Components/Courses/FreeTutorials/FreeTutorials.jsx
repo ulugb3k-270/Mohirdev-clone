@@ -7,7 +7,7 @@ import "./media.freeTutorials.scss";
 
 const FreeTutorials = ({ courses }) => {
   return (
-    <section className="container">
+    <section id="free-tutorials" className="free__tutorials container">
       <SectionHeader
         courses="HTML, CSS, Bootstrap"
         href="/"
