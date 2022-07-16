@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <section id="contact" className="contact">
       <div className="contact__container container">
         <form className="contact__form" onSubmit={submitForm}>
           <h2 className="contact__form-paragraph">Konsultatsiya olish</h2>
@@ -85,7 +85,7 @@ const Contact = () => {
           <Button variant="contained" type="submit" className="contact__form-btn">Jo'natish</Button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
