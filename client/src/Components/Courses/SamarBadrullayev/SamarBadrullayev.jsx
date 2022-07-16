@@ -6,7 +6,7 @@ import Card from "../Card/Card";
 import SectionHeader from "../SectionHeader/SectionHeader";
 const SamarBadrullayev = ({ courses }) => {
   return (
-    <div className="sam container">
+    <section id="samar-badrullayev-courses" className="sam container">
       <SectionHeader courses="Samar Badrullayev " paragraph="kurslari" />
       <div className="sam__grid">
         {courses.map((course) => (
@@ -22,7 +22,7 @@ const SamarBadrullayev = ({ courses }) => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
