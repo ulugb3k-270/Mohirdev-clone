@@ -7,7 +7,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <section id="banner" className="banner">
       <div className="banner__container container">
         <div className="banner__left">
           <h2>
@@ -22,7 +22,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
