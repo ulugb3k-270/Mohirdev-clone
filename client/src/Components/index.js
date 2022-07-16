@@ -10,6 +10,9 @@ import Python from "./Courses/Python/Python";
 import PaidCourses from "./Courses/PaidCourses/PaidCourses";
 
 import Contact from "./Contact/Contact";
+import Categories from "./Categories/Categories";
+import Banner from "./Banner/Banner";
+import Testimonials from "./Testimonials/Testimonials";
 
 export {
   Navbar,
@@ -21,5 +24,8 @@ export {
   SamarBadrullayev,
   Python,
   PaidCourses,
-  Contact
+  Contact,
+  Categories,
+  Banner,
+  Testimonials
 };
