@@ -6,7 +6,7 @@ import Card from "../Card/Card";
 
 const PaidCourses = ({ courses }) => {
   return (
-    <div className="paid__courses">
+    <div className="paid__courses container">
       <h2 className="paid__courses-paragraph">
         Mohirlar taklif qilayotgan pullik kurslar
       </h2>

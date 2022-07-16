@@ -9,6 +9,8 @@ import SamarBadrullayev from "./Courses/SamarBadrullayev/SamarBadrullayev";
 import Python from "./Courses/Python/Python";
 import PaidCourses from "./Courses/PaidCourses/PaidCourses";
 
+import Contact from "./Contact/Contact";
+
 export {
   Navbar,
   Signin,
@@ -18,5 +20,6 @@ export {
   FreeTutorials,
   SamarBadrullayev,
   Python,
-  PaidCourses
+  PaidCourses,
+  Contact
 };

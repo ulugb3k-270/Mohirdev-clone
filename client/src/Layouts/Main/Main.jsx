@@ -8,6 +8,7 @@ import {
   SamarBadrullayev,
   Python,
   PaidCourses,
+  Contact,
 } from "../../Components";
 
 const Main = () => {
@@ -201,17 +202,18 @@ const Main = () => {
       },
     ],
   });
-  
+
   return (
     <main className="main">
-      <div className="container">
-        <Practicum courses={courses.practicum} />
-        <FreeTutorials courses={courses.freeTutorials} />
-        <SamarBadrullayev courses={courses.samarBadrullayev} />
-        <Python courses={courses.python} />
-        <h2 className="main__animatedText">Mohir <span>Dasturchi</span> bo’lish uchun ilk qadamlar</h2>
-        <PaidCourses courses={courses.paidCourses} />
-      </div>
+      <Practicum courses={courses.practicum} />
+      <FreeTutorials courses={courses.freeTutorials} />
+      <SamarBadrullayev courses={courses.samarBadrullayev} />
+      <Python courses={courses.python} />
+      <h2 className="main__animatedText">
+        Mohir <span>Dasturchi</span> bo’lish uchun ilk qadamlar
+      </h2>
+      <PaidCourses courses={courses.paidCourses} />
+      <Contact />
     </main>
   );
 };

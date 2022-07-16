@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 import SectionHeader from "../SectionHeader/SectionHeader";
 const Python = ({ courses }) => {
   return (
-    <div className="python">
+    <div className="python container">
       <SectionHeader courses="Python" paragraph=" kurslari" />
       <div className="python__grid">
         {courses.map((course) => (
