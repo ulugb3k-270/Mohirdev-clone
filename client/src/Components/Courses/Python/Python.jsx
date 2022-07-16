@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 import SectionHeader from "../SectionHeader/SectionHeader";
 const Python = ({ courses }) => {
   return (
-    <div className="python container">
+    <section id="python-courses" className="python container">
       <SectionHeader courses="Python" paragraph=" kurslari" />
       <div className="python__grid">
         {courses.map((course) => (
@@ -36,7 +36,7 @@ const Python = ({ courses }) => {
           size="big"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
