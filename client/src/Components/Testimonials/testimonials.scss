@@ -1,0 +1,21 @@
+@import "../../root.scss";
+
+.testimonials{
+    background: $secondary-bg-color;
+    padding: 60px 0;
+    &__paragraph{
+        padding-bottom: 30px;
+        text-align: center;
+        color: $primary-paragraph-color;
+        font-size: $font-size--regular;
+    }
+
+    &__grid{
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        row-gap: 30px;
+
+    }
+}

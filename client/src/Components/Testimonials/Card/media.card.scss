@@ -1,0 +1,8 @@
+@media (max-width: 1000px) {
+  .testimonials {
+    &__card {
+      max-width: 700px;
+      min-height: unset;
+    }
+  }
+}
