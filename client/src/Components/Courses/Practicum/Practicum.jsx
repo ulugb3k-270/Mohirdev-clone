@@ -9,17 +9,17 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 
 const Practicum = ({ courses }) => {
   return (
-    <div className="container">
+    <section id="practicum-courses" className="practicum container">
       <SectionHeader
         paragraph="Kasbga yo’naltirilgan Praktikumlar"
         title="6 oyda 0dan ish topish darajasiga chiqing. Boshlang’ich bilim talab qilinmaydi."
       />
-      <div className="practicum">
+      <div className="practicum__grid">
         {courses.map((course) => (
           <Card key={course?._id} src={course?.src} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
