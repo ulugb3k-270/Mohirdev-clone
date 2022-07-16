@@ -1,0 +1,105 @@
+@import "../../root.scss";
+
+.footer {
+  font-family: $open-sans;
+  background: $primary-white-color;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    row-gap: 30px;
+    padding: 70px 0 40px;
+  }
+
+  &__info {
+    max-width: 285px;
+    width: 100%;
+    padding: 0px 10px;
+    p {
+      width: 100%;
+      padding: 20px 0 30px;
+      color: $muted-color;
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      color: $muted-color;
+
+      svg {
+        fill: #0665d8;
+        font-size: 20px;
+      }
+    }
+
+    &-sm {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+
+      a {
+        svg {
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          fill: $muted-color;
+          &:hover {
+            fill: #0665d8;
+          }
+        }
+      }
+    }
+  }
+
+  &__col {
+    &-list {
+      padding: 0 10px;
+      h2 {
+        margin-bottom: 25px;
+        font-size: $font-size--medium;
+        color: $primary-paragraph-color;
+      }
+      margin-bottom: 30px;
+    }
+
+    &-item {
+      margin: 15px 0;
+    }
+
+    &-link {
+      color: $muted-color;
+    }
+  }
+
+  &__bottom {
+    background: $secondary-bg-color;
+    padding: 25px 0;
+
+    p {
+      color: $muted-color;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-payments {
+      display: flex;
+      align-items: center;
+      p {
+        color: $muted-color;
+      }
+      img {
+        width: 80px;
+        height: 55px;
+        object-fit: contain;
+        transform: translateY(-7px);
+      }
+    }
+  }
+}

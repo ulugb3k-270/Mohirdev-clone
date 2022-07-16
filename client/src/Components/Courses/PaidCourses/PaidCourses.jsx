@@ -6,7 +6,7 @@ import Card from "../Card/Card";
 
 const PaidCourses = ({ courses }) => {
   return (
-    <srction id="paid-courses" className="paid__courses container">
+    <section id="paid-courses" className="paid__courses container">
       <h2 className="paid__courses-paragraph">
         Mohirlar taklif qilayotgan pullik kurslar
       </h2>
@@ -24,7 +24,7 @@ const PaidCourses = ({ courses }) => {
           />
         ))}
       </div>
-    </srction>
+    </section>
   );
 };
 

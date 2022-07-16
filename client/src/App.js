@@ -4,7 +4,7 @@ import React from "react";
 import "./App.scss";
 
 // Layouts
-import { Header, Main } from "./Layouts";
+import { Footer, Header, Main } from "./Layouts";
 
 // React-Router-Dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,6 +14,7 @@ function App() {
     <Router>
       <Header />
       <Main />
+      <Footer />
     </Router>
   );
 }
