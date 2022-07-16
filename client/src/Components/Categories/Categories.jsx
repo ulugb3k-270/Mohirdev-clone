@@ -6,7 +6,7 @@ import "./media.categories.scss"
 
 const Categories = () => {
   return (
-    <div className="categories">
+    <section id="categories" className="categories">
       <div className="container">
         <h2 className="categories__paragraph">Mohir tanlovlarni kategoriyalarga ko’ra amalga oshiring</h2>
         <div className="categories__grid">
@@ -15,7 +15,7 @@ const Categories = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
