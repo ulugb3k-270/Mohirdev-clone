@@ -9,6 +9,9 @@ import {
   Python,
   PaidCourses,
   Contact,
+  Categories,
+  Banner,
+  Testimonials,
 } from "../../Components";
 
 const Main = () => {
@@ -214,6 +217,9 @@ const Main = () => {
       </h2>
       <PaidCourses courses={courses.paidCourses} />
       <Contact />
+      <Categories />
+      <Banner />
+      <Testimonials />
     </main>
   );
 };
