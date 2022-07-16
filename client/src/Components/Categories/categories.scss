@@ -1,0 +1,18 @@
+@import "../../root.scss";
+
+.categories{
+    padding: 120px 0;
+    &__paragraph{
+        font-size: $font-size--large;
+        text-align: center;
+        color: $primary-paragraph-color;
+        margin-bottom: 63px;
+
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        place-items: center;
+    }
+}
