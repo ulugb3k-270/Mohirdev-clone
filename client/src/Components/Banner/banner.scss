@@ -1,0 +1,50 @@
+@import "../../root.scss";
+
+.banner {
+  background-image: url("https://mohirdev.uz/wp-content/uploads/Mohirdev-V1.1-1-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    h2 {
+      color: $primary-white-color;
+      font-size: $font-size--large;
+      font-weight: 500;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__right {
+    button {
+      padding: 23px 47px;
+      background: $primary-white-color;
+      color: $primary-hover-color;
+      outline: none;
+      border: none;
+      border-radius: 7px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background: $primary-hover-color;
+        color: $primary-white-color;
+      }
+    }
+  }
+}
