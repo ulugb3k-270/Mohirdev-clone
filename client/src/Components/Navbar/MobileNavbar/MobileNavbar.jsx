@@ -4,44 +4,39 @@ import React, { useState } from "react";
 import "./mobileNavbar.scss";
 
 // React Router Dom
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // Icons
 import { VscHome } from "react-icons/vsc";
 import { CgMenu } from "react-icons/cg";
 import { IoIosSearch } from "react-icons/io";
 import { BsGrid } from "react-icons/bs";
-
-// Compoents
-import MobileModal from "../MobileModal/MobileModal";
+import {AiOutlineInfoCircle} from 'react-icons/ai'
 
 const MobileNavbar = () => {
   return (
     <nav className="mobile__nav">
       <ul className="mobile__nav-list">
         <li className="mobile__nav-item">
-          <Link to="#home" className="mobile__nav-link" itemID="home">
+          <NavLink to="/" className="mobile__nav-link" itemID="home">
             <VscHome />
             <p>Home</p>
-          </Link>
+          </NavLink>
         </li>
         <li className="mobile__nav-item">
-          <Link to="#category" className="mobile__nav-link">
-            <MobileModal text="Category" />
+          <NavLink to="/courses" className="mobile__nav-link">
             <BsGrid />
-            <p>Category</p>
-          </Link>
+            <p>Courses</p>
+          </NavLink>
         </li>
         <li className="mobile__nav-item">
-          <Link to="#search" className="mobile__nav-link" name="search">
-            <MobileModal text="Search" />
-            <IoIosSearch />
-            <p>Search</p>
-          </Link>
+          <NavLink to="/about" className="mobile__nav-link" name="search">
+            <AiOutlineInfoCircle />
+            <p>About</p>
+          </NavLink>
         </li>
         <li className="mobile__nav-item">
-          <Link to="#menu" className="mobile__nav-link" name="menu">
-            <MobileModal text="Menu" />
+          <Link to="/" className="mobile__nav-link" name="menu">
             <CgMenu />
             <p>Menu</p>
           </Link>

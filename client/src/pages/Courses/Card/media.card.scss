@@ -1,0 +1,30 @@
+@media (max-width: 1000px){
+    .courses__page-card-img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 720px){
+    .courses__page-card{
+        flex-direction: column;
+        width: 100%;
+
+        &-right{
+            width: 100%;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            row-gap: 20px;
+        }
+
+        &-img{
+            max-width: 690px;
+            width: 100%;
+            height: auto;
+        }
+
+        &-about-end{
+            align-items: flex-start;
+        }
+    }
+}

@@ -7,6 +7,10 @@
   align-items: center;
   font-family: $open-sans;
   z-index: 99;
+
+  &.background{
+    background: #0d0e12;
+  }
   
 
   &__left {

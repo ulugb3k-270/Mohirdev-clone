@@ -1,0 +1,45 @@
+@import "../../root.scss";
+
+.courses {
+  font-family: $open-sans;
+
+  &__top {
+    padding: 60px 10px;
+    position: relative;
+    margin-bottom: 40px;
+    h2 {
+      font-size: $primary-paragraph-color;
+      font-size: $font-size--x-large;
+      font-size: 700;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #dadce0;
+      opacity: 0.6;
+      bottom: 0px;
+    }
+  }
+
+  &__title {
+    font-size: $font-size--regular;
+    color: $primary-paragraph-color;
+    margin-bottom: 50px;
+    span{
+        font-weight: 800;
+    }
+  }
+
+  &__filter{
+    width: 160px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
