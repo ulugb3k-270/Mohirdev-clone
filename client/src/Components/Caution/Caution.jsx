@@ -7,7 +7,7 @@ const Caution = () => {
       <p>
         Bu Mohirdev saytining clone versiyasi. Mohirdev saytiga kirish uchun
         quyidagi havolaga o'ting{" "}
-        <Link to="https://mohirdev.uz" target="_blank">Mohirdev saytiga o'tish</Link>
+        <a href="https://mohirdev.uz" rel="noreferrer" target="_blank">Mohirdev saytiga o'tish</a>
       </p>
     </div>
   );
