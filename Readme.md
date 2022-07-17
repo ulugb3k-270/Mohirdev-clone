@@ -29,8 +29,8 @@ Backend - NodeJS, ExpressJS, MongoDB, bcrypt (for password) and JWT
 - Deploy code to Github
 
 
-===========================================
-About me.
+======================= About me ===========================
+
 
 I am Ulugbek Asadov from Karshi, Uzbekistan. I was born in 2002 and I have been learning Frontend development since 2020. Unfortunately I have no job experience yet. Because I could not find any job in my city Karshi. That's the big reason why I want to move to Tashkent, Uzbekistan. My goal is to be Senior developer and work for a gigantic companies like Google or Facebook. In two years I learned lost of skills such as:
 
