@@ -12,7 +12,6 @@ import { InputLabel, MenuItem, Select } from "@material-ui/core";
 
 // DATA
 import { allCourses } from "./data";
-import { useEffect } from "react";
 
 const Courses = () => {
   const [filter, setFilter] = useState("");
@@ -21,7 +20,7 @@ const Courses = () => {
   function sortByName(a, b) {
     const titleA = a.title.toUpperCase();
     const titleB = b.title.toUpperCase();
-  
+
     let comparison = 0;
     if (titleA > titleB) {
       comparison = 1;
@@ -30,7 +29,6 @@ const Courses = () => {
     }
     return comparison;
   }
-  
 
   const handleChangeFilter = (e) => {
     setFilter(e.target.value);
@@ -52,8 +50,6 @@ const Courses = () => {
         return setCourses(allCourses);
     }
   };
-
-  console.log(allCourses)
 
   return (
     <section className="courses" id="courses">

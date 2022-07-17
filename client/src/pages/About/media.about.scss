@@ -1,0 +1,25 @@
+@media (max-width: 900px) {
+  .about__us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-right {
+      h3 {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+    .about{
+        h2{
+            font-size: 30px;
+        }
+    }
+}

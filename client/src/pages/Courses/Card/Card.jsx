@@ -15,7 +15,7 @@ const Card = ({ course }) => {
     <div className="courses__page-card">
       <div className="courses__page-card-frame-box">
         <img src={src} className="courses__page-card-img" alt="" />
-        <div class="card__header-frame">
+        <div className="card__header-frame">
           <button>Ko'rish</button>
           <button>{price === "Bepul" ? "Enroll now" : "Savatga solish"}</button>
         </div>

@@ -10,7 +10,7 @@ import { Caution, Navbar } from "./Components";
 import { Footer, Header, Main } from "./Layouts";
 
 // PAGES
-import { Courses } from "./pages";
+import { About, Courses } from "./pages";
 
 // React-Router-Dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -43,6 +43,7 @@ function App() {
           element={
             <>
               <Navbar type="background" />
+              <About />
             </>
           }
         />

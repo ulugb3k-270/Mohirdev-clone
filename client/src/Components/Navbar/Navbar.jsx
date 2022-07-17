@@ -46,7 +46,7 @@ const Navbar = ({ type = "" }) => {
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="/" className="nav__link">
+              <Link to="#" className="nav__link">
                 Praktikuk Kurslar
               </Link>
               <RiArrowDownSFill />
@@ -81,7 +81,7 @@ const Navbar = ({ type = "" }) => {
               </ul>
             </li>
             <li className="nav__item">
-              <Link to="/" className="nav__link">
+              <Link to="/about" className="nav__link">
                 Biz Haqimizda
               </Link>
             </li>

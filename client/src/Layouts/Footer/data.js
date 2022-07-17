@@ -3,17 +3,17 @@ export const footerCols = {
     {
       _id: 1,
       title: "Bepul Kurslar",
-      href: "/",
+      href: "#",
     },
     {
       _id: 2,
       title: "Pullik Kurslar",
-      href: "/",
+      href: "#",
     },
     {
       _id: 3,
       title: "Practicum [beta]",
-      href: "/",
+      href: "#",
     },
   ],
 
@@ -21,12 +21,12 @@ export const footerCols = {
     {
       _id: 1,
       title: "Biz haqimizda",
-      href: "/",
+      href: "#",
     },
     {
       _id: 2,
       title: "Ommaviy oferta",
-      href: "/",
+      href: "#",
     },
   ],
 
@@ -34,52 +34,52 @@ export const footerCols = {
     {
       _id: 1,
       title: "Ilk Qadam: C va Python",
-      href: "/",
+      href: "#",
     },
     {
       _id: 2,
       title: "Data Science va Sun'iy Intellekt",
-      href: "/",
+      href: "#",
     },
     {
       _id: 3,
       title: "Full Stack Python",
-      href: "/",
+      href: "#",
     },
     {
       _id: 4,
       title: "MERN",
-      href: "/",
+      href: "#",
     },
     {
       _id: 5,
       title: "GO",
-      href: "/",
+      href: "#",
     },
     {
       _id: 6,
       title: "IOS Development",
-      href: "/",
+      href: "#",
     },
     {
       _id: 7,
       title: "Java Development",
-      href: "/",
+      href: "#",
     },
     {
       _id: 8,
       title: "Android Development",
-      href: "/",
+      href: "#",
     },
     {
       _id: 9,
       title: "Frontend",
-      href: "/",
+      href: "#",
     },
     {
       _id: 10,
       title: "Digital Marketing",
-      href: "/",
+      href: "#",
     },
   ],
 
@@ -87,17 +87,17 @@ export const footerCols = {
     {
       _id: 1,
       title: "Bog'lanish",
-      href: "/",
+      href: "#",
     },
     {
       _id: 2,
       title: "Telegram Bot",
-      href: "/",
+      href: "#",
     },
     {
       _id: 3,
       title: "Qo'llanma",
-      href: "/",
+      href: "#",
     },
   ],
 };

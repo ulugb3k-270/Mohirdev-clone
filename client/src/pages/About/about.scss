@@ -1,0 +1,88 @@
+@import "../../root.scss";
+
+.about {
+  font-family: $open-sans;
+
+  &__us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      max-width: 540px;
+      width: 100%;
+    }
+
+    &-right {
+      h3 {
+        margin-bottom: 20px;
+        font-size: $font-size--regular;
+        color: $primary-paragraph-color;
+        font-weight: 800;
+      }
+
+      p {
+        font-size: $font-size--small;
+        color: #3e4143;
+        line-height: 28px;
+
+        a {
+          color: $secondary-paragraph-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__publication {
+    margin-top: 150px;
+
+    h2 {
+      text-align: center;
+      font-size: $font-size--larger;
+      color: $primary-paragraph-color;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__practicum {
+    h2 {
+      text-align: center;
+      font-size: $font-size--larger;
+      color: $primary-paragraph-color;
+      margin-bottom: 40px;
+      font-weight: bold;
+      margin-top: 150px;
+    }
+
+    &-team{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+
+        img{
+            max-width: 1024px;
+            width: 100%;
+        }
+
+        small{
+            color: $muted-color;
+            font-style: italic;
+        }
+    }
+
+    p{
+        margin-top: 30px;
+        line-height: 28px;
+        a{
+            color: #0665D8;
+            font-weight: 600;
+        }
+    }
+  }
+}
