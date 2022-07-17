@@ -26,6 +26,8 @@ Why I am using Backend. Because I want to show you How I work with Redux.
 - Build a Footer section
 
 4th day 17-July 2022 (Backend start )
+- Build Courses page
+- Build About page
 - Data should come from backend
 - Deploy Backend to Heroku, Frontend to Vercel
 - Deploy code to Github
