@@ -1,0 +1,14 @@
+.caution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: rgb(218, 203, 0);
+  color: black;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

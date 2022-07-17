@@ -30,7 +30,7 @@ const Main = () => {
 
   return (
     <main className="main">
-      {allCourses?.courses ? (
+      {allCourses?.courses && (
         <>
           <Practicum courses={allCourses?.courses?.practicum} />
           <FreeTutorials courses={allCourses?.courses?.freeTutorials} />
@@ -45,8 +45,6 @@ const Main = () => {
           <Banner />
           <Testimonials />
         </>
-      ) : (
-        <Loader />
       )}
     </main>
   );

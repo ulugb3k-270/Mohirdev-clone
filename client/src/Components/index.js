@@ -15,6 +15,7 @@ import Banner from "./Banner/Banner";
 import Testimonials from "./Testimonials/Testimonials";
 
 import Loader from "./Loader/Loader";
+import Caution from "./Caution/Caution";
 
 export {
   Navbar,
@@ -30,5 +31,6 @@ export {
   Categories,
   Banner,
   Testimonials,
-  Loader
+  Loader,
+  Caution
 };
