@@ -13,7 +13,7 @@
     padding: 80px 50px;
     transform: translateX(390px);
     transition: all 0.3s;
-    z-index: 3;
+    z-index: 99999;
     box-shadow: 6px 0px 20px 0px;
 
     display: flex;
@@ -22,7 +22,6 @@
 
     &.active {
       transform: translateX(0);
-      z-index: unset;
       transition: all 0.3s;
     }
 
