@@ -2,6 +2,8 @@
 
 .main {
   font-family: $open-sans;
+  position: relative;
+  padding: 10px 0;
 
   &__animatedText {
     color: $primary-black-color;

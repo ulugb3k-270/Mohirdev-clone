@@ -14,6 +14,8 @@ import Categories from "./Categories/Categories";
 import Banner from "./Banner/Banner";
 import Testimonials from "./Testimonials/Testimonials";
 
+import Loader from "./Loader/Loader";
+
 export {
   Navbar,
   Signin,
@@ -27,5 +29,6 @@ export {
   Contact,
   Categories,
   Banner,
-  Testimonials
+  Testimonials,
+  Loader
 };
