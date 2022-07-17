@@ -5,7 +5,9 @@ Let's build Mohirdev Clone and apply for a job to Mohirdev
 In this project I am going to use:
 
 Frontend - React, Redux, Redux-thunk, SASS and axios (for fetching some data)
-Backend - NodeJS, ExpressJS, MongoDB, bcrypt (for password) and JWT
+Backend - NodeJS, ExpressJS,
+
+Why I am using Backend. Because I want to show you How I work with Redux.
 
 1st day 14-July 2022
 - Build a Header section
