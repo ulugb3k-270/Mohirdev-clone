@@ -33,7 +33,7 @@ const Navbar = ({ type = "" }) => {
     <>
       <nav className={`nav ${type}`}>
         <div className="nav__left">
-          <Link to="/" className="nav__logo">
+          <Link to="#" className="nav__logo">
             <img
               src="https://mohirdev.uz/wp-content/uploads/Untitled-1-1.png"
               alt="logo"
@@ -52,31 +52,31 @@ const Navbar = ({ type = "" }) => {
               <RiArrowDownSFill />
               <ul className="nav__item-dropdown">
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Ilk Qadam: C va Python asoslari</Link>
+                  <Link to="#">Ilk Qadam: C va Python asoslari</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Data Science</Link>
+                  <Link to="#">Data Science</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Full Stack Python</Link>
+                  <Link to="#">Full Stack Python</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Frontend</Link>
+                  <Link to="#">Frontend</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Goolang</Link>
+                  <Link to="#">Goolang</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">IOS Developer</Link>
+                  <Link to="#">IOS Developer</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Android Developer</Link>
+                  <Link to="#">Android Developer</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Java Developer</Link>
+                  <Link to="#">Java Developer</Link>
                 </li>
                 <li className="nav__item-dropdown-item">
-                  <Link to="/">Digital Marketing</Link>
+                  <Link to="#">Digital Marketing</Link>
                 </li>
               </ul>
             </li>
