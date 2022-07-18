@@ -8,10 +8,8 @@ import { Link, NavLink } from "react-router-dom";
 
 // Icons
 import { VscHome } from "react-icons/vsc";
-import { CgMenu } from "react-icons/cg";
-import { IoIosSearch } from "react-icons/io";
 import { BsGrid } from "react-icons/bs";
-import {AiOutlineInfoCircle} from 'react-icons/ai'
+import { AiOutlineInfoCircle, AiOutlineUser } from "react-icons/ai";
 
 const MobileNavbar = () => {
   return (
@@ -36,10 +34,16 @@ const MobileNavbar = () => {
           </NavLink>
         </li>
         <li className="mobile__nav-item">
-          <Link to="/" className="mobile__nav-link" name="menu">
-            <CgMenu />
-            <p>Menu</p>
-          </Link>
+          <a
+            href="https://admin.shorturl.uz"
+            rel="noreferrer"
+            target="_blank"
+            className="mobile__nav-link"
+            name="menu"
+          >
+            <AiOutlineUser />
+            <p>Admin</p>
+          </a>
         </li>
       </ul>
     </nav>
