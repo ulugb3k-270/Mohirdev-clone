@@ -42,7 +42,7 @@ const MobileNavbar = () => {
             name="menu"
           >
             <AiOutlineUser />
-            <p>Admin</p>
+            <p>Creator</p>
           </a>
         </li>
       </ul>

@@ -85,6 +85,16 @@ const Navbar = ({ type = "" }) => {
                 Biz Haqimizda
               </Link>
             </li>
+            <li className="nav__item">
+              <a
+                href="https://admin.shorturl.uz"
+                target="_blank"
+                rel="noreferrer"
+                className="nav__link"
+              >
+                Creator
+              </a>
+            </li>
           </ul>
         </div>
         <div className="nav__right">
