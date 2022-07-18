@@ -6,18 +6,6 @@
   box-sizing: border-box;
 }
 
-body{
-  &::-webkit-scrollbar{
-    width: 10px;
-    background: unset;
-  }
-
-  &::-webkit-scrollbar-thumb{
-    background: #277add;
-    border-radius: 10px;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -33,4 +21,15 @@ li {
   margin: 0 auto;
 }
 
+body {
+  &::-webkit-scrollbar {
+    width: 10px;
+    background: unset;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #277add;
+    border-radius: 10px;
+  }
+}
 
