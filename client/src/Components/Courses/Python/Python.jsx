@@ -20,21 +20,6 @@ const Python = ({ courses }) => {
             price={course?.price}
           />
         ))}
-
-        <Card
-          category="Anvar Narzullayev"
-          paragraph="Dasturlash Asoslari. Python"
-          author="Anvar Narzullayev"
-          src="https://i0.wp.com/mohirdev.uz/wp-content/uploads/Pythonda-dasturlash-asoslari.jpg?resize=540%2C330&ssl=1"
-          size="big"
-        />
-        <Card
-          category="Anvar Narzullayev"
-          paragraph="Django 3 – Pythonda Full stack Web Dasturlash"
-          author="Anvar Narzullayev"
-          src="https://i0.wp.com/mohirdev.uz/wp-content/uploads/Django-3-kursi.jpg?resize=540%2C330&ssl=1"
-          size="big"
-        />
       </div>
     </section>
   );
