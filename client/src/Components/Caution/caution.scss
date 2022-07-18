@@ -2,15 +2,32 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 10px 5px;
+  padding: 10px 20px;
   background: rgb(218, 203, 0);
   color: black;
   z-index: 999;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transform: translateY(100%);
+  transition: .3s ease;
+  
+  &.active {
+    transform: translateY(0);
+  }
+
+  &__button{
+    background: unset;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover{
+      background: white;
+      color: rgb(218, 203, 0);
+    }
+  }
 }
-
-
