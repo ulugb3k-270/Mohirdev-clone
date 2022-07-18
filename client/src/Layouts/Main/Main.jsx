@@ -12,12 +12,13 @@ import {
   Categories,
   Banner,
   Testimonials,
-  Loader,
 } from "../../Components";
 
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getCourses } from "../../actions/courses";
+
+import Typed from "react-typed";
 
 const Main = () => {
   const { allCourses } = useSelector((state) => state.courses);
@@ -37,7 +38,14 @@ const Main = () => {
           <SamarBadrullayev courses={allCourses?.courses?.samarBadrullayev} />
           <Python courses={allCourses?.courses?.python} />
           <h2 className="main__animatedText">
-            Mohir <span>Dasturchi</span> bo’lish uchun ilk qadamlar
+            Mohir{" "}
+            <Typed
+              strings={["Dasturchi", "Injiner", "Olim"]}
+              typeSpeed={70}
+              backSpeed={70}
+              loop
+            />
+            ilk qadamlar
           </h2>
           <PaidCourses courses={allCourses?.courses?.paidCourses} />
           <Contact />
