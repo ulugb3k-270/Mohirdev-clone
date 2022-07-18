@@ -33,7 +33,7 @@ const Navbar = ({ type = "" }) => {
     <>
       <nav className={`nav ${type}`}>
         <div className="nav__left">
-          <Link to="#" className="nav__logo">
+          <Link to="/" className="nav__logo">
             <img
               src="https://mohirdev.uz/wp-content/uploads/Untitled-1-1.png"
               alt="logo"
