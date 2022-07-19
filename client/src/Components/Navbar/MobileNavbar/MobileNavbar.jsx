@@ -35,7 +35,7 @@ const MobileNavbar = () => {
         </li>
         <li className="mobile__nav-item">
           <a
-            href="https://portfolio.shorturl.uz/"
+            href="https://admin.shorturl.uz"
             rel="noreferrer"
             target="_blank"
             className="mobile__nav-link"

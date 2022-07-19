@@ -87,7 +87,7 @@ const Navbar = ({ type = "" }) => {
             </li>
             <li className="nav__item">
               <a
-                href="https://portfolio.shorturl.uz/"
+                href="https://admin.shorturl.uz"
                 target="_blank"
                 rel="noreferrer"
                 className="nav__link"
